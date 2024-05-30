@@ -88,7 +88,7 @@ padding: 30px 50px;
     background-color: antiquewhite;
 }
 .about h1{
-font-size: 60px;
+font-size: 50px;
 color: whitesmoke;
 }
 .about .img{
@@ -232,3 +232,26 @@ margin-bottom: 10px;
     height: 100%;
     width: 100%;
 }
+ @media screen and (max-width:500px) {
+    nav{
+        flex-direction: column;
+    }
+    .section h1{
+        font-size: 32px;
+    }
+    .section1{
+        padding: 10px;
+    }
+    .container{
+        width: 90%;
+    }
+    .section1 p{
+        top: 50%;
+        font-size: 12px;
+    }
+    .about h1{
+font-size: 30px;
+    }
+    
+    
+ }
