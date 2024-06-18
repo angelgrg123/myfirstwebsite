@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nestedloop</title>
+</head>
+
+<body>
+    <script>
+        let num = Number(prompt("enter a number"))
+        let n = 2
+        if (num == 2) {
+            document.write("it is prime")
+        }
+        while (num != n) {
+            if (num % n == 0) {
+                document.write("it is not prime")
+                break
+            }
+            else {
+                n++
+            }
+        }
+        if(num==n){
+            document.write("it is prime <br>")
+        }
+
+        // a) wap to display * pattern 
+        for(i=1; i<=5; i++){
+            for(j=1;i<=i; j++){
+                document.write("*")
+            }
+            document.write("<br>")
+        }
+        
+        // b) wap to display 1 pattern 
+        for(i=1; i<=5; i++){
+            for(j=1;j<=i; j++){
+                document.write(j)
+            }
+            document.write("<br>")
+        }
+
+        // c) wap to display ***** pattern
+        for(i=5; i>=1; i--){
+            for(j=1;j<=1; i++){
+                document.write("*")
+            }
+            document.write("<br>")
+        }
+        
+        // d) wap to display 5 4 3 2 1 pattern
+        for(i=5; i>=1; i--){
+            for(j=1;j<=1; i++){
+                document.write("i")
+            }
+            document.write("<br>")
+        }
+
+        // e) wap to display 1 2 3 4 5 pattern
+        for(i=5; i>=1; i--){
+            for(j=1;j<=1; i++){
+                document.write("i")
+            }
+            document.write("<br>")
+        }
+    </script>
+</body>
+</html>

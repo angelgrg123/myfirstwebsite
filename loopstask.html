@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        do {
+            var choice = Number(prompt("1.sum, 2.difference, 3.product, 4.division, 5.exponent, 6.exiting, 7.choose an option"))
+            let a = Number(prompt("enter a:"))
+            let b = Number(prompt("enter b:"))
+            switch (choice) {
+                case 1: console.log("sum=", a + b)
+                    break
+                case 2: console.log("difference=", a - b)
+                    break
+                case 3: console.log("product=", a * b)
+                    break
+                case 4: console.log("division=", a / b)
+                    break
+                case 5: console.log("exponent=", a ** b)
+                    break
+                case 6: console.log("exiting")
+                    break
+                default: console.log("wrong choice")
+            }
+        } while (choice != 6)
+
+        // wap to display multiplication table from 11 to 20 using nested loop
+        let n = Number(prompt("enter a number"))
+        let i = 1
+        for (n = 11; n <= 20; n++) {
+            for (i = 1; i <= 10; i++) {
+                document.write(n + "*" + i + "=" + n * i + "<br>")
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>

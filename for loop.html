@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for loop</title>
+</head>
+
+<body>
+    <script>
+        // wap to display good morning 20 times
+        let i = 1
+        for (i = 1; i <= 20; i++) {
+            document.write("Good morning <br>")
+        }
+
+        // wap to dispaly natural numbers from 1 to 100
+        let a = 1
+        for (a = 1; a <= 100; a++) {
+            document.write(a + "<br>")
+        }
+
+        // wap to display odd numbers 
+        let b = 1
+        for (b = 1; b <= 100; b = b + 2) {
+            document.write(b + "<br>")
+        }
+
+        // wap to display even numbers 
+        let t = 2
+        for (t = 2; t <= 100; t = t + 2) {
+            document.write(t + "<br>")
+        }
+        // wap to display series 
+        let num = 1
+        let c = 1
+        for (c = 1; c <= 10; c++) {
+            document.write(num + "<br>")
+            num = num + 4
+        }
+
+        // wap to input number and display corresponding
+        let no = Number(prompt("enter a number"))
+        let y = 1
+        for (y = 1; y <= 10; y++) {
+            document.write(no + "*" + y + "=" + no * y + "<br>")
+        }
+
+        // wap to display sum of natural numbers from 1 to n 
+        let sum = 0
+        let n = Number(prompt("enter a number"))
+        for (i = 1; i <= n; i++) {
+            sum = sum + i;    
+    }
+     document.write("sum="+ sum) 
+    </script>
+</body>
+
+</html>

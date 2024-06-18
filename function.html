@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function</title>
+</head>
+
+<body>
+    <script>
+        // without parameter without return 
+        function add2() {
+            let m = Number(prompt("enter a:"))
+            let n = Number(prompt("enter b:"))
+            let sum = m + n
+            document.write("sum=", +sum)
+        }
+        add2()
+        let a = Number(prompt("enter a:"))
+        let b = Number(prompt("enter b:"))
+
+        // with parameter without return 
+        function add3(x, y) {
+            let sum = x + y
+            document.write("sum=", sum)
+        }
+
+
+        add3(a, b)
+        let ans = add4()
+        document.write("sum=", ans)
+
+        // without parameter, with return
+        function add4() {
+            let a = Number(prompt("enter a:"))
+            let b = Number(prompt("enter b:"))
+            return (a + b)
+        }
+    </script>
+</body>
+
+</html>

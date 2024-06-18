@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> greatest</title>
+</head>
+
+<body>
+    <script>
+        // wap to find greatest among three numbers
+        let a = Number(prompt("enter a"))
+        let b = Number(prompt("enter b"))
+        let c = Number(prompt("enter c"))
+        if (a > b) {
+            if (a > c) {
+                document.write("a is greatest")
+            }
+            else {
+                document.write("c is greatest")
+            }
+        }
+else{
+    if (b>c){
+        document.write("b is greatest")
+    }
+    else{
+        document.write("c is greatest")
+    }
+}
+
+// Day
+let day = Number (prompt("enter a number(1-7)"))
+switch(day){
+    case 1:document.write("Sunday")
+    break
+    case 2:document.write("Monday")
+    break
+    case 3:document.write("Tuesday")
+    break
+    case 4:document.write("Wednesday")
+    break
+    case 5:document.write("Thursday")
+    break
+    case 6:document.write("Friday")
+    break
+    case 7:document.write("Saturday")
+    break
+    default: document.write("wrong input")
+}
+
+// sign 
+let e = Number(prompt("enter e"))
+let d = Number(prompt("enter d"))
+let o =prompt("choose '+','-','*' or '/'")
+switch(o){
+    case "+": document.write("sum"+(a+b))
+    break
+    case "-": document.write("difference"-(a-b))
+    break 
+    case "*": document.write("product"*(a*b))
+    break
+    case "/": document.write("division"/(a/b))
+    break
+
+}
+</script>
+</body>
+</html>

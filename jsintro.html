@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java script</title>
+</head>
+<body>
+    <h1 id="myheading"></h1>
+    <h1 id="myage"></h1>
+    <h1 id="myadd"></h1>
+
+    <script>
+        document.write ("Hello")
+        let input=prompt ("enter you name here")
+        document.getElementById ("myheading").innerHTML = " Welcome" + input
+       
+        let age=prompt ("enter you age here")
+        document.getElementById ("myage").innerHTML = "  I am " + age+ "years old"
+
+        let address=prompt ("enter you address here")
+        document.getElementById ("myadd").innerHTML = " I am from" + address
+    </script>
+</body>
+</html>
