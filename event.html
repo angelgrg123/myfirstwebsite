@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>event</title>
+</head>
+<body>
+    <button onclick="showname()">show name</button>
+    <button ondblclick="showname()">show name on double click</button>
+    <h1 id="name"></h1>
+    <script>
+        let myname=prompt("enter your name")
+        function showname(){
+            // document.write("myname")
+            // document.getElementById('name').innerHTML='my name is'+myname
+            document.getElementById('name').innerHTML=`my name is ${myname}`
+        }
+    </script>
+</body>
+</html>
