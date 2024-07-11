@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ HEAD
     <title>word.count</title>
 </head>
 <body>
     <textarea id="input" onkeyup="countword()"></textarea>
+
+    <title>string</title>
+</head>
+<body>
+    <textarea id="input"  onkeyup="countword()"></textarea>
+feea38b53fb1f7d85305db36020d3071e50dc03c
     <div id="word_count"></div>
     <script>
         function countword(){
@@ -14,9 +21,15 @@
             let words=input_text.split("")
             let sentences=input_text.split("")
             let word_count=words.length
+          HEAD
             let sentences_count= sentences.length-1
             document.getElementById("word_count").innerHTML="wordcount="+word_count
         }
+
+            let sentence_count=sentences.length-1
+            document.getElementById("word_count").innerHTML="word count="+word_count
+
+feea38b53fb1f7d85305db36020d3071e50dc03c
     </script>
 </body>
 </html>
