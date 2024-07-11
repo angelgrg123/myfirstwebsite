@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // write a function to calculate sum of n terms of series 1 4 7 10 13
+        function sum(n){
+let num =1
+let sum=0
+for(i=1;i<=n;i++){
+sum=sum+num
+num=num+3
+        } 
+        return sum
+    }
+    let n=Number(prompt("enter a series"))
+    let ans=sum(n)
+    document.write("ans=",ans)
+    </script>
+</body>
+</html>

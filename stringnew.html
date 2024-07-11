@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>string new</title>
+</head>
+
+<body>
+    <script>
+        let str = "javascript is programming language for web"
+        let result = str.search("programming")
+        document.write("result=", result)
+        let new_str = str.replace('javascript', 'HTML')
+        document.write(" <br> replace=", new_str)
+        let num = "2732"
+        let newnum = num.padStart(6, '0')
+        document.write("<br> padStart=", newnum)
+        let no = "2732"
+        let newno = num.padEnd(6, '0')
+        document.write("<br> padEnd=", newno)
+    </script>
+</body>
+</html>

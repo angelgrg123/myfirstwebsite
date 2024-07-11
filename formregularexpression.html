@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form regular expression</title>
+</head>
+
+<body>
+    <form action="">
+        <label for="fullname">Name</label>
+        <input type="text" onkeyup="Name_validate()" id="fullname" name="fname">
+        <span id="name_msg"></span>
+        <br>
+
+        <label for="phone">Phone</label>
+        <input type="numbers" id="phone" onkeyup="Phone_validate()">
+        <span id="phone_num"></span>
+        <br>
+
+        <label for="email">Email</label>
+        <input type="email" id="email">
+        <span id="email_text"></span>
+        <br>
+
+        <label for="password">Password</label>
+        <input type="pass" id="password" onkeyup="pass_validate">
+        <span id="password_no"></span>
+        <br>
+
+        <button>Submit</button>
+        <span id="submit"></span>
+
+        <script>
+            let namemsg = document.getElementById("name_msg")
+
+            function Name_validate() {
+                let fullname = document.getElementById("fullname").value
+                if (!fullname.match(/^[a-z]{3,}$/)) {
+                    namemsg.innerHTML = " Name must not be only alphabets at least 3 characters"
+                    namemsg.style.color = "red"
+                }
+                else {
+                    namemsg.innerHTML = "Valid name"
+                    namemsg.style.color = "green"
+                }
+            }
+
+            let phonenum = document.getElementById("phone_num")
+            function Phone_validate() {
+                let phone = document.getElementById("phone").value
+                if (!phone.match(/^98[0-9]{8}$/)) {
+                    phonenum.innerHTML = "Number should not be less than 10"
+                    phonenum.style.color = "red"
+                }
+                else {
+                    phonenum.innerHTML = "Valid number"
+                    phonenum.style.color = "green"
+                }
+            }
+
+            let emailtext = document.getElementById("email_text")
+
+            function Name_validate() {
+                let fullname = document.getElementById("email").value
+                if (!fullname.match(/^[a-z]{3,}$/)) {
+                    emailtext.innerHTML = " Name must not be only alphabets at least 3 characters"
+                    emailtext.style.color = "red"
+                }
+                else {
+                    emailtex.innerHTML = "Valid name"
+                    emailtext.style.color = "green"
+                }
+            }
+
+        </script>
+    </form>
+</body>
+
+</html>

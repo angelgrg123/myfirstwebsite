@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math</title>
+</head>
+<body>
+    <script>
+        document.write("PI=",Math.PI)
+        document.write(" <br> sqrt of 2=",Math.SQRT2)
+        let num=Number(prompt("enter a number"))
+        let sqrt=Math.sqrt(num)
+        document.write("<br> ans=",sqrt)
+        let b=Number(prompt("enter base"))
+        let e=Number(prompt("enter exponent"))
+        let ans=Math.pow(b,e)
+        document.write("<br>b<sup>e</sup>=",ans)
+
+        let r=Math.random()*100
+        document.write("<br> random=",r)
+        let t= Math.trunc(r)
+        document.write("<br> trunc=",t)
+        let round=Math.round(r)
+        document.write("<br> round=",round)
+        let floor=Math.floor(r)
+        document.write("<br> floor=",floor)
+        let ceil=Math.ceil(r)
+        document.write("<br> ceil=",ceil)
+    </script>
+</body>
+</html>
